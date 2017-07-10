@@ -16,10 +16,9 @@ interface NonceFactoryinterface
      *
      * @since [*next-version*]
      *
-     * @param string $id    Option nonce ID.
-     * @param array $config Optional additional configuration data.
+     * @param array $config Configuration data.
      *
      * @return NonceInterface
      */
-    public function make($id = '', $config = []);
+    public function make($config = []);
 }
