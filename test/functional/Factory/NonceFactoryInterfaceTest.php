@@ -45,7 +45,14 @@ class NonceFactoryInterfaceTest extends TestCase
         $subject = $this->createInstance();
 
         $this->assertInstanceOf(
-            static::TEST_SUBJECT_CLASSNAME, $subject,
+            static::TEST_SUBJECT_CLASSNAME,
+            $subject,
+            'Subject is not a valid instance'
+        );
+
+        $this->assertInstanceOf(
+            'Dhii\Factory\FactoryInterface',
+            $subject,
             'Subject is not a valid instance'
         );
     }
