@@ -34,5 +34,5 @@ interface NonceFactoryInterface
      *
      * @return NonceInterface The created nonce instance.
      */
-    public function make($config = []);
+    public function make($config = array());
 }
