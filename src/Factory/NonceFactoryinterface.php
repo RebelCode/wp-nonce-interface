@@ -32,7 +32,7 @@ interface NonceFactoryinterface
      *
      * @param array $config Configuration data.
      *
-     * @return NonceInterface
+     * @return NonceInterface The created nonce instance.
      */
     public function make($config = []);
 }
