@@ -12,6 +12,20 @@ use RebelCode\WordPress\Nonce\NonceInterface;
 interface NonceFactoryinterface
 {
     /**
+     * The key of the ID in factory config data.
+     *
+     * @since [*next-version*]
+     */
+    const K_CONFIG_ID = 'id';
+
+    /**
+     * The key of the code in factory config data.
+     *
+     * @since [*next-version*]
+     */
+    const K_CONFIG_CODE = 'code';
+
+    /**
      * Creates a new nonce instance.
      *
      * @since [*next-version*]
