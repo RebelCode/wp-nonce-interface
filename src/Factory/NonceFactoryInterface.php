@@ -2,6 +2,7 @@
 
 namespace RebelCode\WordPress\Nonce\Factory;
 
+use Dhii\Factory\FactoryInterface;
 use RebelCode\WordPress\Nonce\NonceInterface;
 
 /**
@@ -9,7 +10,7 @@ use RebelCode\WordPress\Nonce\NonceInterface;
  *
  * @since [*next-version*]
  */
-interface NonceFactoryInterface
+interface NonceFactoryInterface extends FactoryInterface
 {
     /**
      * The key of the ID in factory config data.
@@ -26,11 +27,9 @@ interface NonceFactoryInterface
     const K_CONFIG_CODE = 'code';
 
     /**
-     * Creates a new nonce instance.
+     * {@inheritdoc}
      *
      * @since [*next-version*]
-     *
-     * @param array $config Configuration data.
      *
      * @return NonceInterface The created nonce instance.
      */
